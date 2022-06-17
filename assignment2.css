@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: bisque; */
+    min-height: 50vh;
+}
+header{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+header,form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+}
+header h1{
+    padding: 1px;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    border: 2px solid rgb(7, 7, 7);
+
+}
+form input{
+    width: 500px;
+}
+form input:hover{
+    border-color: blue;
+}
+    form button{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    form button:hover{
+        color: white;
+        background-color: grey;
+
+    }
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .todo-list{
+        min-width: 30%;
+        list-style: none;
+    }
+    .todo{
+         /* margin: 0.5rem; */
+         background:white;
+         color: black;
+         font-size: 1.5rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border: 1px solid black;
+         width: 600px;
+
+
+    }
+    .todo li{
+        flex: 1;
+    }
+    .edit-btn{
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+    .edit-btn:hover{
+        color: green;
+        background-color: white;
+
+    }
+    .trash-btn{
+        background-color: rgb(196, 30, 30);
+        color: white;
+        margin-right: 5px;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+    .trash-btn:hover{
+        color: rgb(196, 30, 30);
+        background-color: white;
+
+    }
+    .todo-item{
+        padding: 0rem 0.5rem;
+    }
+    .edit,.delete{
+        pointer-events: none;
+
+    }
+    .main-container{
+        border: 5px solid rgb(16, 14, 14);
+        margin: auto;
+        margin-top: 100px;
+        width: 700px;
+        padding-bottom: 10px;
+
+
+    }
